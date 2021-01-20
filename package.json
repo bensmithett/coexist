@@ -1,0 +1,7 @@
+{
+  "name": "js-page-renderer",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
