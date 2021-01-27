@@ -31,7 +31,7 @@ Everything else about your original response — cookies, headers, HTTP status, 
 ### Yeah, but...
 
 <details>
-  <summary>Isn't this just sticking a Node.js app in front of a Rails/WordPress/whatever API? That's not new.</summary>
+  <summary><b>Isn't this just sticking a Node.js app in front of a Rails/WordPress/whatever API? That's not new.</b></summary>
 
   Kind of.
 
