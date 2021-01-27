@@ -43,25 +43,25 @@ Everything else about your original response — cookies, headers, HTTP status, 
 </details>
 
 <details>
-  <summary>I can do everything non-JS frameworks do in JS alone.</summary>
+  <summary><b>I can do everything non-JS frameworks do in JS alone.</b></summary>
 
   Cool. You probably don't need this.
 </details>
 
 <details>
-  <summary>I don't agree that UI development is better in the JS ecosystem.</summary>
+  <summary><b>I don't agree that UI development is better in the JS ecosystem.</b></summary>
 
   Cool. I disagree. That's OK 🤗 open an issue and give me your thoughts.
 </details>
 
 <details>
-  <summary>Wouldn't this result in a terrible security risk?</summary>
+  <summary><b>Wouldn't this result in a terrible security risk?</b></summary>
 
   Whoops. Mea culpa. I haven't used this pattern in anger on anything yet. This repo is a quick exploration of a thought bubble. Please open an issue 🙂
 </details>
 
 <details>
-  <summary>How is this different from react-rails or airbnb/hypernova</summary>
+  <summary><b>How is this different from react-rails or airbnb/hypernova</b></summary>
 
   Those projects achieve React SSR in a Rails app by shoehorning a not-very-Railsy thing right into the middle of Rails' usual request/response lifecycle — hypernova makes a HTTP request; react-rails shells out to a Node.js process (as does its WordPress cousin [react-wp-ssr](https://github.com/humanmade/react-wp-ssr)).
 
@@ -73,15 +73,14 @@ Everything else about your original response — cookies, headers, HTTP status, 
 </details>
 
 <details>
-  <summary>This is weird. Rendering pages as JSON and HTML in an external JS service is a bridge too far.</summary>
+  <summary><b>This is weird. Rendering pages as JSON and HTML in an external JS service is a bridge too far.</b></summary>
 
   Conceptually I think it's pretty close to client-only rendering — just with the rendering step nudged a few miles down the road from the browser to a CDN edge worker. But like every solution, this one comes with tradeoffs. Good on you for weighing them up, thanks for reading 🙂
 </details>
 
-## Live demo
+## Live demos [TODO]
 
 - Rails app
-  - In the real world you wouldn't expose this to the internet, but this example lets you see the raw responses coming out of Rails before they go through the JS app
 - Hapi reverse proxy example
 - Cloudflare Workers example
 - AWS Lambda@Edge example
@@ -92,8 +91,3 @@ Everything else about your original response — cookies, headers, HTTP status, 
 Woah there, this isn't a library or a framework. It's just a demo of this pattern using Rails with a Yarn Workspaces monorepo. It's a [template repo](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template) though, so feel free to take it and run with it.
 
 TODO: create a seperate development doc for working on this.
-
-### Setup
-
-- Clone the repo
-- `yarn`
