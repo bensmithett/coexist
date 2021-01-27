@@ -17,6 +17,7 @@ Here are 2 things I think are true:
 ### There is value in the JS ecosystem's approach to UI development.
 
 Code-based components and JSX over templates. Modules and a true front end dependency graph. Different CSS approaches. Different client bootstrapping approaches. Integration with design tools. Storybook. ESLint. Types.
+
 All together, this stuff has enabled new and productive UI development processes that are still largely missing when building UI in non-JS frameworks.
 
 ## The pattern
