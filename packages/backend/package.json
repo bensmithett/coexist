@@ -1,0 +1,8 @@
+{
+  "name": "@coexist/backend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "bundle exec rails server"
+  }
+}

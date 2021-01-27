@@ -1,0 +1,15 @@
+{
+  "name": "@coexist/webpack-config",
+  "version": "1.0.0",
+  "main": "shared.js",
+  "private": true,
+  "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.16.0"
+  }
+}

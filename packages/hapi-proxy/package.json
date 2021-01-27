@@ -1,0 +1,18 @@
+{
+  "name": "@coexist/hapi-proxy",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "yarn node ./scripts/dev.js",
+    "build-prod": "yarn node ./scripts/build_prod.js"
+  },
+  "dependencies": {
+    "@coexist/frontend": "1.0.0",
+    "@coexist/webpack-config": "1.0.0",
+    "@hapi/h2o2": "^9.0.2",
+    "@hapi/hapi": "^20.0.3",
+    "@hapi/wreck": "^17.1.0",
+    "webpack": "^5.16.0",
+    "webpack-node-externals": "^2.5.2"
+  }
+}
