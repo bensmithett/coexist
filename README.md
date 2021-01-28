@@ -22,6 +22,8 @@ All together, this stuff has enabled new and productive UI development processes
 
 ## The pattern
 
+![](./docs/diagram.png)
+
 Build a non-JS app like you normally would. Talk to your database. Make API calls. Run async background jobs. Gather and transform data. Respond to requests with pages.
 
 Just don't bother rendering HTML. Instead, render JSON and transform it to HTML on the way through an edge worker or a Node.js reverse proxy.
