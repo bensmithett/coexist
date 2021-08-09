@@ -1,5 +1,5 @@
 # README
 
-```
-rails new backend --api
+```bash
+rails new backend --api --database=postgresql
 ```
