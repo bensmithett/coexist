@@ -1,0 +1,10 @@
+name = "cloudflare-worker"
+type = "webpack"
+webpack_config = "webpack.config.js"
+
+account_id = "TODO"
+workers_dev = true
+route = ""
+zone_id = ""
+
+vars = { BACKEND_HOST = "https://coexist-example-backend-rails.herokuapp.com" }
