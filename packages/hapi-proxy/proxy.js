@@ -34,6 +34,7 @@ async function start () {
 async function transformResponse (request, h) {
   const { response } = request
 
+  if (request.url.pathname === '/favicon.ico') return response
   if (request.method === 'head') return response
   if (response.statusCode === 304) return response
 

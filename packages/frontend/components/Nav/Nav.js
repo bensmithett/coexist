@@ -4,8 +4,8 @@ export default function Header() {
       <a style={styles.link} href='/'>
         Home
       </a>
-      <a style={styles.link} href='/account/'>
-        Account
+      <a style={styles.link} href='/about/'>
+        About
       </a>
     </header>
   )

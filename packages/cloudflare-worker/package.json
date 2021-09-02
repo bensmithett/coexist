@@ -11,6 +11,8 @@
     "webpack-node-externals": "^3.0.0"
   },
   "scripts": {
-    "build": "NODE_ENV=production webpack --config webpack.config.js"
+    "build": "NODE_ENV=production webpack --config webpack.config.js",
+    "dev": "wrangler dev",
+    "deploy": "wrangler publish"
   }
 }

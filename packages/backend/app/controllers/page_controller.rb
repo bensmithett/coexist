@@ -1,19 +1,26 @@
 require 'faker'
 
-class HomeController < ApplicationController
-  def index
+class PageController < ApplicationController
+  def home
+    build_response('Home')
+  end
+
+  def about
+    build_response('About')
+  end
+
+  private
+
+  def build_response(component)
     preferences = cookies[:preferences] || set_preferences
 
     render json: {
-      component: 'Home',
+      component: component,
       props: {
-        count: 1234,
         preferences: preferences
       }
     }
   end
-
-  private
 
   def set_preferences
     preferences = "#{Faker::Name.name} drinks #{Faker::Tea.variety}"

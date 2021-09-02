@@ -1,6 +1,6 @@
-import Account from './Account'
+import About from './About'
 import Home from './Home'
 
 export default {
-  Account, Home
+  About, Home
 }
