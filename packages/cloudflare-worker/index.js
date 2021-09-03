@@ -9,7 +9,7 @@ async function handleRequest(request) {
 
   if (pathname === '/favicon.ico') return new Response(null, { status: 404 })
 
-  const originalResponse = await fetch(`${BACKEND_HOST}${pathname}${search}`)
+  const originalResponse = await fetch(`${BACKEND_HOST}${pathname}${search}`, { ...request })
 
   if (request.method === 'HEAD') return originalResponse
   if (originalResponse.status === 304) return originalResponse
