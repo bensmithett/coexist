@@ -7,7 +7,7 @@
     "@coexist/frontend": "1.0.0",
     "@coexist/webpack-config": "1.0.0",
     "webpack": "^5.49.0",
-    "webpack-cli": "^4.7.2",
+    "webpack-cli": "^4.8.0",
     "webpack-node-externals": "^3.0.0"
   },
   "scripts": {

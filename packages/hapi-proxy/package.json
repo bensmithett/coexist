@@ -4,7 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "yarn node ./scripts/dev.js",
-    "build-prod": "yarn node ./scripts/build_prod.js"
+    "build": "NODE_ENV=production webpack --config ./scripts/webpack.config.js",
+    "start": "node ./build/proxy.compiled.js"
+  },
+  "engines": {
+    "yarn": "1.x",
+    "node": "15.x"
   },
   "dependencies": {
     "@coexist/frontend": "1.0.0",
@@ -12,7 +17,7 @@
     "@hapi/h2o2": "^9.0.2",
     "@hapi/hapi": "^20.0.3",
     "@hapi/wreck": "^17.1.0",
-    "webpack": "^5.16.0",
+    "webpack-cli": "^4.8.0",
     "webpack-node-externals": "^2.5.2"
   }
 }

@@ -1,8 +1,7 @@
 const { fork } = require('child_process')
 const path = require('path')
 const webpack = require('webpack')
-const nodeExternals = require('webpack-node-externals')
-const webpackConfig = require('@coexist/webpack-config')
+const hapiProxyWebpackConfig = require('./webpack.config.js')
 
 let server
 
@@ -13,24 +12,7 @@ process.on('SIGTERM', onExit)
 compile()
 
 function compile() {
-  webpack({
-    entry: path.join(__dirname, '../proxy.js'),
-    externals: [
-      nodeExternals({
-        additionalModuleDirs: [path.join(__dirname, '../../../node_modules/')],
-        allowlist: [/^@coexist/]
-      })
-    ],
-    target: 'node',
-    mode: 'none',
-    module: {
-      rules: [webpackConfig.module.rules.js]
-    },
-    output: {
-      filename: 'proxy.compiled.js',
-      path: path.join(__dirname, '../build')
-    }
-  }).watch({}, (err, stats) => {
+  webpack(hapiProxyWebpackConfig).watch({}, (err, stats) => {
     console.log(
       stats.toString({
         chunks: false,

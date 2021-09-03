@@ -1,7 +1,10 @@
 {
-  "name": "js-page-renderer",
+  "name": "coexist",
   "private": true,
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "scripts": {
+    "heroku-postbuild": "./scripts/heroku_postbuild.sh"
+  }
 }
