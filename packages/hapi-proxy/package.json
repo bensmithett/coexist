@@ -9,7 +9,7 @@
   },
   "engines": {
     "yarn": "1.x",
-    "node": "15.x"
+    "node": "16.x"
   },
   "dependencies": {
     "@coexist/frontend": "1.0.0",

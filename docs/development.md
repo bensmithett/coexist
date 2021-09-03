@@ -25,7 +25,7 @@ yarn workspace @coexist/frontend storybook
 
 ```bash
 # Rails
-git push heroku-remote-rails main
+git subtree push --prefix packages/backend heroku-remote-rails main
 # Hapi proxy
 git push heroku-remote-hapi main
 ```
