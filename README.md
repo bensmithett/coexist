@@ -80,13 +80,11 @@ Everything else about your original response — cookies, headers, HTTP status, 
   Conceptually I think it's pretty close to client-only rendering — just with the rendering step nudged a few miles down the road from the browser to a CDN edge worker. But like every solution, this one comes with tradeoffs. Good on you for weighing them up, thanks for reading 🙂
 </details>
 
-## Live demos [TODO]
+## Live demos
 
-- Rails app
-- Hapi reverse proxy example
-- Cloudflare Workers example
-- AWS Lambda@Edge example
-- Storybook
+- Rails backend: https://coexist-example-backend-rails.herokuapp.com/
+- Hapi reverse proxy: https://coexist-example-proxy-hapi.herokuapp.com/
+- Cloudflare Worker: https://cloudflare-worker.stunning-value.workers.dev/
 
 ## Installation
 
