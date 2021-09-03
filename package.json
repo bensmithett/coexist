@@ -6,5 +6,9 @@
   ],
   "scripts": {
     "heroku-postbuild": "./scripts/heroku_postbuild.sh"
+  },
+  "engines": {
+    "yarn": "1.x",
+    "node": "16.x"
   }
 }
