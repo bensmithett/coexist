@@ -14,10 +14,7 @@ const backend =
     : { host: 'localhost', port: 3000 }
 
 async function start() {
-  const server = Hapi.server({
-    port: process.env.PORT || 4000,
-    host: 'localhost'
-  })
+  const server = Hapi.server(serverConfig)
 
   server.route({
     method: '*',
