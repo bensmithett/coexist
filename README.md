@@ -4,6 +4,10 @@ A pattern for unobtrusively server-rendering JS views when using non-JS framewor
 
 Render JSON to HTML in an edge worker or reverse proxy. Let your preferred backend handle literally everything else.
 
+![](./docs/diagram.png)
+
+[See live demos](#live-demos)
+
 ## Why?
 
 Here are 2 things I think are true:
@@ -21,8 +25,6 @@ Code-based components and JSX over templates. Modules and a true front end depen
 All together, this stuff has enabled new and productive UI development processes that are still largely missing when building UI in non-JS frameworks.
 
 ## The pattern
-
-![](./docs/diagram.png)
 
 Build a non-JS app like you normally would. Talk to your database. Make API calls. Run async background jobs. Gather and transform data. Respond to requests with pages.
 
