@@ -2,7 +2,7 @@
 
 A pattern for unobtrusively server-rendering JS views when using non-JS frameworks.
 
-Render JSON to HTML in a JS edge worker or reverse proxy. Let your preferred non-JS backend handle literally everything else.
+Render JSON to HTML using JS in an edge worker or reverse proxy. Let your preferred non-JS backend handle literally everything else.
 
 ![](./docs/diagram.png)
 
