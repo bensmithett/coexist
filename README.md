@@ -93,3 +93,7 @@ Everything else about your original response — cookies, headers, HTTP status, 
 Woah there, this isn't a library or a framework. It's just a demo of this pattern using Rails with a Yarn Workspaces monorepo. It's a [template repo](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template) though, so feel free to take it and run with it.
 
 See [development.md](docs/development.md) for setup, local development and deployment instructions.
+
+## Prior art & inspiration
+
+- [Rendering React on the Edge with Flareact and Cloudflare Workers](https://blog.cloudflare.com/rendering-react-on-the-edge-with-flareact-and-cloudflare-workers/)
