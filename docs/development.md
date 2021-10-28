@@ -24,6 +24,15 @@ yarn workspace @coexist/frontend storybook
 
 `backend` (Rails) and `hapi-proxy` (Hapi) packages are manually deployed to Heroku as per [this guide](https://medium.com/inato/how-to-setup-heroku-with-yarn-workspaces-d8eac0db0256) (free Dynos, please don't DoS me 🙂)
 
+First install Heroku CLI, login, and configure git remotes:
+
+```bash
+heroku git:remote --remote heroku-remote-rails -a coexist-example-backend-rails
+heroku git:remote --remote heroku-remote-hapi -a coexist-example-proxy-hapi
+```
+
+Then to deploy:
+
 ```bash
 # Rails
 git subtree push --prefix packages/backend heroku-remote-rails main
