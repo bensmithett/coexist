@@ -3,8 +3,9 @@
 ## Setup
 
 - Clone the repo
+- Install PostgreSQL (either [homebrew](https://wiki.postgresql.org/wiki/Homebrew) or [Postgres.app](https://postgresapp.com/))
 - `yarn`
-- `cd packages/backend && bundle install`
+- `cd packages/backend && bundle install && rake db:create`
 
 ## Dev servers
 
